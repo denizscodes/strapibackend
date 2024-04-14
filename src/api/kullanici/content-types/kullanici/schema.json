@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kullanicis",
+  "info": {
+    "singularName": "kullanici",
+    "pluralName": "kullanicis",
+    "displayName": "Kullanıcı",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Kullaniciname": {
+      "type": "string"
+    },
+    "sohbets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sohbet.sohbet",
+      "mappedBy": "kullanici"
+    }
+  }
+}

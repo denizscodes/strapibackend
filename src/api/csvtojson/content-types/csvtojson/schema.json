@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "csvtojsons",
+  "info": {
+    "singularName": "csvtojson",
+    "pluralName": "csvtojsons",
+    "displayName": "Jsoncollection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jsondata": {
+      "type": "json"
+    }
+  }
+}

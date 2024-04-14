@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sohbets",
+  "info": {
+    "singularName": "sohbet",
+    "pluralName": "sohbets",
+    "displayName": "Sohbet"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Kullanici": {
+      "type": "string"
+    },
+    "postimage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "kullanici": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::kullanici.kullanici",
+      "inversedBy": "sohbets"
+    }
+  }
+}
